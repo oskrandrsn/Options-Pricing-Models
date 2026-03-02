@@ -73,6 +73,7 @@ Assumption of the BS model includes:
 - log-normal asset price dynamics
 
 - Black–Scholes PDE for the option value $V(S,t)$:
+
 $$
 \frac{\partial V}{\partial t}
 + \tfrac12 \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2}
