@@ -32,8 +32,7 @@ Current implementations:
 - GBM simulation for stock paths
 
 Currntly working on: 
-- Exotic options
-- Heston model 
+- American options 
 
 Planned: 
 - Barrier
@@ -136,10 +135,11 @@ Example graph of simulated stock paths:
 
 **Parameters** 
 
-**Exotic Options** 
+**American Options** 
 
-Exotic options are non-standard and complex financial derivatives with customized features. These contracts differ a lot from standard options, consequently needing more advanced models in order to accurately price them. 
+American options are standard options similar to European contracts with the only difference where the contract holder can exercise the option at anytime prior to maturity of the contract. This allows for more flexibility and hedging strategies for investors, but in contrary come in higher price for the contract. 
 
+With 
 
 
 
