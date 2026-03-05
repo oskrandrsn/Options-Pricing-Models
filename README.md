@@ -94,17 +94,11 @@ $W_t$ = Standard Brownian Motion
 
 
 The future possible prices of a stock that follows the GBM model can be modelled by the GBM stochastic differential process:  
-$$
-S_{t+\Delta t} = S_t \cdot \exp\Big((r - q - \frac{1}{2}\sigma^2)\Delta t + \sigma \sqrt{\Delta t} Z_t \Big)
-$$
-
-The formula above is used to simulate possible stochastic paths of stock prices under the risk neutral measure to ensure that discounted prices follow a martingale approach. 
-
+$$S_{t+\Delta t} = S_t \cdot \exp\Big((r - q - \frac{1}{2}\sigma^2)\Delta t + \sigma \sqrt{\Delta t} Z_t \Big)$$
 
 **Model - european_options.py** 
 
 The model uses the GBM dynamics for Monte Carlo simulation of simulated stock paths starting from an initial stock price $S_0$. It uses then BS model to price both European put and call options in addition to giving the values of Greeks, including Delta, Theta and Vega. 
-
 
 **Model's Parameters** 
 
