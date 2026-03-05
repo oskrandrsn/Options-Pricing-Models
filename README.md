@@ -109,7 +109,8 @@ $$S_{t+\Delta t} = S_t \cdot \exp\Big((r - q - \frac{1}{2}\sigma^2)\Delta t + \s
 - $N_{\text{Paths}}$ — Number of Monte Carlo simulations
 
 - $T$ — Option's Maturity
-- 
+
+
 
 **Notes on the model**
 
