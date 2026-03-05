@@ -37,9 +37,7 @@ Planned:
 
 ## 2. European Options: Call and Put ##
 
-**European Options and Black-Scholes Model**
-
-European options are standard financial derivatives that allows the holder of the contract to either buy or sell an underlying asset at a strike price at a predetermined maturity date. 
+**Black-Scholes Model**
 
 The Black-Scholes model (BS) is a mathematical framework for pricing European call and put options under the risk-netrual pricing measure. It assumes the underlying stock follows the Geometric Brownian Motion (GBM) dynamics with constant volatility and frictionless market condition.
 
@@ -69,8 +67,6 @@ Put-Call Parity:
 $C - P = S_0 e^{-qT} - K e^{-rT}$
 
 
-**Geometric Brownian Motion**
-
 Under the BS model a stock price $S_T$ follows the GBM dynamics - a countinous time stochastic process with a drift and random component. A stock $S_t$ follows a GBM process given under the risk-netrual measure by:  
 
 
@@ -98,10 +94,6 @@ $$S_{t+\Delta t} = S_t \cdot \exp\Big((r - q - \frac{1}{2}\sigma^2)\Delta t + \s
 
 **Model - european_options.py** 
 
-The model uses the GBM dynamics for Monte Carlo simulation of simulated stock paths starting from an initial stock price $S_0$. It uses then BS model to price both European put and call options in addition to giving the values of Greeks, including Delta, Theta and Vega. 
-
-**Model's Parameters** 
-
 - $S_0$ - Initial Stock Price at Time $t=0$  
 
 - $K$ - Strike Price
@@ -117,7 +109,7 @@ The model uses the GBM dynamics for Monte Carlo simulation of simulated stock pa
 - $N_{\text{Paths}}$ — Number of Monte Carlo simulations
 
 - $T$ — Option's Maturity
-
+- 
 
 **Notes on the model**
 
