@@ -27,7 +27,9 @@ def get_model_parameters():
         "Number_Paths": 5000,
         "seed": 5000
     }
+    
     params["dt"] = params["T"] / params["Number_Time_Steps"]
+    
     return params
 
 # ==========================================================
@@ -215,8 +217,7 @@ def print_results(params,final_prices,mc_results):
 # ==========================================================
 
 def main():
-    '''TODO: ADD DOCUMENTATION'''
-
+    
     params = get_model_parameters()
 
     paths = simulate_gbm_paths(params)
