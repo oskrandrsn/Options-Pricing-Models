@@ -14,7 +14,7 @@ def get_model_parameters():
     params = {"S0": 100, "K": 50, "r": 0.5, "q": 0.5, "vol": 0.9, "barrier": 120,
               "option_type": "put", # "call", "put"
               "barrier_type": "up-and-out", # "up-and-out", "down-and-out", "up-and-in", "down-and-in"
-              "N": 100, "M": 50000, "seed": 5000,
+              "N": 1000, "M": 50000, "seed": 5000,
               "T": (datetime.date(2026, 6, 10) - datetime.date.today()).days / 365}
 
     params["dt"] = params["T"] / params["N"]
